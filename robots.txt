@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# AI crawlers — allowed to index content for AI search visibility
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+Sitemap: https://gcappliancerepair.com/sitemap.xml

@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Appliance Repair Online | Gold Country Appliance Repair</title>
+  <meta name="description" content="Schedule your appliance repair online with Gold Country Appliance Repair. Serving Grass Valley, Nevada City, Auburn, Roseville, Rocklin and surrounding Nevada & Placer County communities. Or call (530) 277-3536." />
+  <link rel="canonical" href="https://gcappliancerepair.com/booking/" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Appliance Repair Booking",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Gold Country Appliance Repair",
+      "telephone": "+15302773536",
+      "url": "https://gcappliancerepair.com"
+    },
+    "areaServed": "Nevada County, Placer County, Sacramento County, CA",
+    "description": "Online booking for mobile appliance repair in Northern California. Same-day and next-day appointments available.",
+    "availableChannel": {
+      "@type": "ServiceChannel",
+      "serviceUrl": "https://gcappliancerepair.com/booking/",
+      "servicePhone": "+15302773536"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --gold: #F5C518;
+      --gold-light: #FFD740;
+      --gold-dark: #C9A000;
+      --black: #0A0A0A;
+      --black-mid: #111111;
+      --black-card: #161616;
+      --white: #F0EDE8;
+      --font-display: 'Bebas Neue', sans-serif;
+      --font-condensed: 'Barlow Condensed', sans-serif;
+      --font-body: 'Barlow', sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    /* ── DUAL MOBILE ACTION BAR ── */
+    .action-bar {
+      display: none;
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      z-index: 999;
+      display: none;
+      grid-template-columns: 1fr 1fr;
+    }
+    .action-bar-call {
+      background: var(--gold);
+      padding: 14px 10px;
+      text-align: center;
+    }
+    .action-bar-call a {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      letter-spacing: 0.04em;
+      color: var(--black);
+      display: flex; align-items: center; justify-content: center; gap: 6px;
+    }
+    .action-bar-book {
+      background: var(--black-mid);
+      border-top: 2px solid var(--gold);
+      padding: 14px 10px;
+      text-align: center;
+    }
+    .action-bar-book a {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      letter-spacing: 0.04em;
+      color: var(--gold);
+      display: flex; align-items: center; justify-content: center; gap: 6px;
+    }
+    @media (max-width: 768px) {
+      .action-bar { display: grid; }
+      body { padding-bottom: 56px; }
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(10,10,10,0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(245,197,24,0.15);
+      padding: 0 5%;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 68px;
+    }
+    .nav-logo img {
+      height: 54px; width: auto;
+      filter: brightness(0) invert(1);
+    }
+    .nav-links {
+      display: flex; align-items: center; gap: 20px; list-style: none;
+    }
+    .nav-links a {
+      font-family: var(--font-condensed);
+      font-size: 0.95rem; letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--white); opacity: 0.8; transition: opacity 0.2s, color 0.2s;
+    }
+    .nav-links a:hover { opacity: 1; color: var(--gold); }
+    .nav-call {
+      background: var(--gold); color: var(--black) !important;
+      opacity: 1 !important; padding: 8px 16px; font-weight: 700 !important;
+    }
+    .nav-book {
+      border: 1px solid var(--gold); color: var(--gold) !important;
+      opacity: 1 !important; padding: 7px 16px;
+      transition: background 0.2s !important;
+    }
+    .nav-book:hover { background: rgba(245,197,24,0.1) !important; }
+    .nav-mobile-actions { display: none; }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-mobile-actions {
+        display: flex; gap: 10px; align-items: center;
+      }
+      .nav-mobile-actions a {
+        font-family: var(--font-display);
+        font-size: 1rem; letter-spacing: 0.04em;
+      }
+      .mob-call { color: var(--gold); }
+      .mob-book {
+        background: var(--gold); color: var(--black);
+        padding: 6px 14px;
+      }
+    }
+
+    /* ── PAGE HERO ── */
+    .page-hero {
+      position: relative;
+      padding: 60px 5% 48px;
+      border-bottom: 1px solid rgba(245,197,24,0.1);
+      background: radial-gradient(ellipse 60% 50% at 70% 50%, rgba(245,197,24,0.06) 0%, transparent 70%);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .breadcrumb {
+      font-family: var(--font-condensed);
+      font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase;
+      color: rgba(240,237,232,0.35);
+      margin-bottom: 20px;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .breadcrumb a { color: var(--gold); opacity: 0.7; }
+    .breadcrumb a:hover { opacity: 1; }
+    .page-hero img.hero-logo {
+      height: 80px; width: auto;
+      filter: brightness(0) invert(1);
+      margin-bottom: 24px;
+    }
+    .page-hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      letter-spacing: 0.02em; line-height: 0.95;
+      margin-bottom: 14px;
+    }
+    .page-hero h1 span { color: var(--gold); }
+    .page-hero p {
+      font-size: 1rem;
+      color: rgba(240,237,232,0.6);
+      max-width: 560px; line-height: 1.7;
+    }
+
+    /* ── TRUST STRIP ── */
+    .trust-strip {
+      background: var(--black-mid);
+      border-bottom: 1px solid rgba(245,197,24,0.08);
+      padding: 16px 5%;
+      display: flex; gap: 32px; flex-wrap: wrap; align-items: center;
+    }
+    .trust-item {
+      display: flex; align-items: center; gap: 8px;
+      font-family: var(--font-condensed);
+      font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;
+      color: rgba(240,237,232,0.45);
+    }
+    .trust-icon { color: var(--gold); font-size: 0.9rem; }
+
+    /* ── BOOKING LAYOUT ── */
+    .booking-wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 56px 5%;
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 48px;
+      align-items: start;
+    }
+    @media (max-width: 900px) {
+      .booking-wrap { grid-template-columns: 1fr; }
+      .booking-sidebar { order: -1; }
+    }
+
+    /* ── IFRAME CONTAINER ── */
+    .booking-frame-wrap {
+      background: var(--black-card);
+      border: 1px solid rgba(245,197,24,0.12);
+      padding: 8px;
+    }
+    .booking-frame-wrap iframe {
+      display: block;
+      width: 100%;
+      border: none;
+    }
+    .booking-frame-label {
+      font-family: var(--font-condensed);
+      font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase;
+      color: rgba(240,237,232,0.25);
+      text-align: center;
+      padding: 8px 0 4px;
+    }
+
+    /* ── SIDEBAR ── */
+    .booking-sidebar {}
+    .sidebar-card {
+      background: var(--black-card);
+      border: 1px solid rgba(245,197,24,0.1);
+      padding: 28px 24px;
+      margin-bottom: 16px;
+    }
+    .sidebar-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.4rem; letter-spacing: 0.04em;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+    .sidebar-card p {
+      font-size: 0.9rem;
+      color: rgba(240,237,232,0.55);
+      line-height: 1.65;
+      margin-bottom: 16px;
+    }
+    .sidebar-phone {
+      display: flex; align-items: center; gap: 10px;
+      font-family: var(--font-display);
+      font-size: 1.6rem; color: var(--gold);
+      letter-spacing: 0.04em;
+      margin-bottom: 8px;
+    }
+    .sidebar-hours {
+      font-family: var(--font-condensed);
+      font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;
+      color: rgba(240,237,232,0.3);
+    }
+    .sidebar-divider {
+      height: 1px;
+      background: rgba(245,197,24,0.1);
+      margin: 20px 0;
+    }
+    .sidebar-list {
+      list-style: none;
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    .sidebar-list li {
+      display: flex; align-items: flex-start; gap: 10px;
+      font-size: 0.875rem;
+      color: rgba(240,237,232,0.55);
+      line-height: 1.5;
+    }
+    .sidebar-list li::before {
+      content: '✓';
+      color: var(--gold);
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .sidebar-areas {
+      display: flex; flex-wrap: wrap; gap: 6px;
+      margin-top: 12px;
+    }
+    .area-pill {
+      font-family: var(--font-condensed);
+      font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase;
+      color: rgba(240,237,232,0.4);
+      border: 1px solid rgba(245,197,24,0.12);
+      padding: 3px 10px;
+    }
+
+    /* ── BOTTOM CTA ── */
+    .bottom-cta {
+      background: var(--gold);
+      padding: 52px 5%;
+      text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .bottom-cta::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(0,0,0,0.03) 10px, rgba(0,0,0,0.03) 20px);
+    }
+    .bottom-cta-inner { position: relative; z-index: 1; }
+    .bottom-cta img {
+      height: 60px; width: auto;
+      filter: brightness(0); opacity: 0.15;
+      display: block; margin: 0 auto 20px;
+    }
+    .bottom-cta h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      color: var(--black); margin-bottom: 6px;
+    }
+    .bottom-cta p {
+      font-family: var(--font-condensed);
+      font-size: 0.9rem; letter-spacing: 0.12em; text-transform: uppercase;
+      color: rgba(10,10,10,0.5); margin-bottom: 24px;
+    }
+    .bottom-cta-btns {
+      display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;
+    }
+    .btn-dark {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--black); color: var(--gold);
+      font-family: var(--font-display); font-size: 1.2rem;
+      letter-spacing: 0.08em; padding: 14px 32px;
+      transition: background 0.2s;
+    }
+    .btn-dark:hover { background: #1a1a1a; }
+    .btn-outline-dark {
+      display: inline-flex; align-items: center; gap: 8px;
+      border: 2px solid rgba(10,10,10,0.3); color: var(--black);
+      font-family: var(--font-display); font-size: 1.2rem;
+      letter-spacing: 0.08em; padding: 12px 32px;
+      transition: border-color 0.2s;
+    }
+    .btn-outline-dark:hover { border-color: var(--black); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--black);
+      border-top: 1px solid rgba(245,197,24,0.1);
+      padding: 36px 5% 24px;
+      text-align: center;
+    }
+    footer img { height: 56px; filter: brightness(0) invert(1); margin-bottom: 12px; }
+    footer p {
+      font-size: 0.8rem; color: rgba(240,237,232,0.25);
+      font-family: var(--font-condensed); letter-spacing: 0.05em;
+      margin-bottom: 4px;
+    }
+    footer a { color: var(--gold); opacity: 0.6; }
+    footer a:hover { opacity: 1; }
+  </style>
+</head>
+<body>
+
+  <!-- Dual mobile action bar -->
+  <div class="action-bar">
+    <div class="action-bar-call">
+      <a href="tel:+15302773536">📞 Call Now</a>
+    </div>
+    <div class="action-bar-book">
+      <a href="/booking/">📅 Book Online</a>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-logo">
+      <a href="/"><img src="/logo.png" alt="Gold Country Appliance Repair" /></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="/#services">Services</a></li>
+      <li><a href="/#areas">Service Areas</a></li>
+      <li><a href="/communities/">Communities</a></li>
+      <li><a href="/#about">About</a></li>
+      <li><a href="/booking/" class="nav-book">📅 Book Online</a></li>
+      <li><a href="tel:+15302773536" class="nav-call">📞 (530) 277-3536</a></li>
+    </ul>
+    <div class="nav-mobile-actions">
+      <a href="tel:+15302773536" class="mob-call">📞</a>
+      <a href="/booking/" class="mob-book">Book</a>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="breadcrumb">
+      <a href="/">Home</a>
+      <span>›</span>
+      <span>Book Online</span>
+    </div>
+    <img class="hero-logo" src="/logo.png" alt="Gold Country Appliance Repair" />
+    <h1>Schedule Your<br /><span>Repair Online</span></h1>
+    <p>Fill out the form below to request an appointment. We serve Nevada County, Placer County, and surrounding communities. Prefer to talk? Call us directly at <a href="tel:+15302773536" style="color:var(--gold);">(530) 277-3536</a>.</p>
+  </div>
+
+  <!-- Trust strip -->
+  <div class="trust-strip">
+    <div class="trust-item"><span class="trust-icon">✓</span> Licensed & Insured</div>
+    <div class="trust-item"><span class="trust-icon">⚡</span> Same-Day Available</div>
+    <div class="trust-item"><span class="trust-icon">🏠</span> Mobile — We Come to You</div>
+    <div class="trust-item"><span class="trust-icon">🔧</span> All Major Brands</div>
+    <div class="trust-item"><span class="trust-icon">🔥</span> LP Propane Conversions</div>
+  </div>
+
+  <!-- Trust photo strip -->
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px;max-width:1100px;margin:0 auto 0;padding:0 0;">
+    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=75&fit=crop" alt="Licensed mobile appliance repair technician in Nevada County California — Gold Country Appliance Repair same-day service" width="500" height="180" loading="lazy" style="width:100%;height:180px;object-fit:cover;filter:grayscale(25%) brightness(.7);display:block;"/>
+    <img src="https://images.unsplash.com/photo-1621905251189-08b45249a5ea?w=500&q=75&fit=crop" alt="Professional appliance technician diagnosing home appliance in Placer County California — Gold Country Appliance Repair" width="500" height="180" loading="lazy" style="width:100%;height:180px;object-fit:cover;filter:grayscale(25%) brightness(.7);display:block;"/>
+    <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=500&q=75&fit=crop" alt="Washing machine repair in Grass Valley Nevada County California home — Gold Country Appliance Repair mobile service" width="500" height="180" loading="lazy" style="width:100%;height:180px;object-fit:cover;filter:grayscale(25%) brightness(.7);display:block;"/>
+  </div>
+
+  <!-- Booking layout -->
+  <div class="booking-wrap">
+
+    <!-- Workiz iframe -->
+    <div>
+      <div class="booking-frame-wrap">
+        <iframe
+          src="https://online-booking.workiz.com/?ac=348f46b5f848a4a6e36d27963da349a182a0a0c770f90e70969708f1da50f5d9"
+          width="100%"
+          height="700px"
+          style="border:none;"
+          title="Schedule appliance repair with Gold Country Appliance Repair"
+          loading="lazy">
+        </iframe>
+        <div class="booking-frame-label">Secure booking powered by Workiz</div>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="booking-sidebar">
+
+      <div class="sidebar-card">
+        <h3>Prefer to Call?</h3>
+        <p>Reach Paul directly. Same-day and next-day appointments frequently available.</p>
+        <div class="sidebar-phone">📞 <a href="tel:+15302773536">(530) 277-3536</a></div>
+        <div class="sidebar-hours">Mon – Sat &nbsp;·&nbsp; 8am – 6pm</div>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>What to Expect</h3>
+        <ul class="sidebar-list">
+          <li>Submit your request — we'll confirm your appointment by phone or text</li>
+          <li>Paul arrives at your home with tools and common parts on hand</li>
+          <li>Diagnosis and honest quote before any work begins</li>
+          <li>Most repairs completed same visit</li>
+          <li>No hauling your appliance anywhere</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>We Service</h3>
+        <ul class="sidebar-list">
+          <li>Refrigerators & Freezers</li>
+          <li>Washing Machines & Dryers</li>
+          <li>Dishwashers</li>
+          <li>Stoves, Ovens & Ranges</li>
+          <li>LP Propane Conversions</li>
+        </ul>
+        <div class="sidebar-divider"></div>
+        <h3>Service Areas</h3>
+        <div class="sidebar-areas">
+          <span class="area-pill">Grass Valley</span>
+          <span class="area-pill">Nevada City</span>
+          <span class="area-pill">Penn Valley</span>
+          <span class="area-pill">Auburn</span>
+          <span class="area-pill">Roseville</span>
+          <span class="area-pill">Rocklin</span>
+          <span class="area-pill">Lincoln</span>
+          <span class="area-pill">Loomis</span>
+          <span class="area-pill">Smartsville</span>
+          <span class="area-pill">Colfax</span>
+          <span class="area-pill">+ More</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Payment & Trust Section -->
+  <div style="background:#0e0e0e;border-top:1px solid rgba(245,197,24,0.1);border-bottom:1px solid rgba(245,197,24,0.1);padding:40px 5%;">
+    <div style="max-width:1100px;margin:0 auto;">
+      <div style="font-family:'Barlow Condensed',sans-serif;font-size:.76rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:flex;align-items:center;gap:9px;">
+        <span style="display:block;width:16px;height:1px;background:var(--gold)"></span>We Accept
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:28px;">
+        <!-- Stripe badge -->
+        <div style="background:#635BFF;padding:8px 18px;display:inline-flex;align-items:center;gap:8px;border-radius:4px;">
+          <svg width="40" height="16" viewBox="0 0 40 16" fill="none" xmlns="http://www.w3.org/2000/svg"><text x="0" y="13" font-family="Arial" font-size="13" font-weight="bold" fill="white">stripe</text></svg>
+        </div>
+        <!-- Card type badges -->
+        <div style="background:#1A1F36;border:1px solid rgba(255,255,255,0.1);padding:6px 14px;display:inline-flex;align-items:center;gap:6px;border-radius:3px;">
+          <span style="font-family:'Barlow Condensed',sans-serif;font-size:.85rem;letter-spacing:.06em;color:rgba(240,237,232,0.7);text-transform:uppercase;">VISA</span>
+        </div>
+        <div style="background:#1A1F36;border:1px solid rgba(255,255,255,0.1);padding:6px 14px;display:inline-flex;align-items:center;gap:6px;border-radius:3px;">
+          <span style="font-family:'Barlow Condensed',sans-serif;font-size:.85rem;letter-spacing:.06em;color:rgba(240,237,232,0.7);text-transform:uppercase;">Mastercard</span>
+        </div>
+        <div style="background:#1A1F36;border:1px solid rgba(255,255,255,0.1);padding:6px 14px;display:inline-flex;align-items:center;gap:6px;border-radius:3px;">
+          <span style="font-family:'Barlow Condensed',sans-serif;font-size:.85rem;letter-spacing:.06em;color:rgba(240,237,232,0.7);text-transform:uppercase;">Amex</span>
+        </div>
+        <div style="background:#1A1F36;border:1px solid rgba(255,255,255,0.1);padding:6px 14px;display:inline-flex;align-items:center;gap:6px;border-radius:3px;">
+          <span style="font-family:'Barlow Condensed',sans-serif;font-size:.85rem;letter-spacing:.06em;color:rgba(240,237,232,0.7);text-transform:uppercase;">Discover</span>
+        </div>
+        <div style="background:#1A1F36;border:1px solid rgba(255,255,255,0.1);padding:6px 14px;display:inline-flex;align-items:center;gap:6px;border-radius:3px;">
+          <span style="font-family:'Barlow Condensed',sans-serif;font-size:.85rem;letter-spacing:.06em;color:rgba(240,237,232,0.7);text-transform:uppercase;">Cash</span>
+        </div>
+        <div style="background:#1A1F36;border:1px solid rgba(255,255,255,0.1);padding:6px 14px;display:inline-flex;align-items:center;gap:6px;border-radius:3px;">
+          <span style="font-family:'Barlow Condensed',sans-serif;font-size:.85rem;letter-spacing:.06em;color:rgba(240,237,232,0.7);text-transform:uppercase;">Check</span>
+        </div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;">
+        <div style="display:flex;align-items:center;gap:8px;font-family:'Barlow Condensed',sans-serif;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(240,237,232,0.45);border:1px solid rgba(245,197,24,0.12);padding:7px 14px;">
+          <span style="color:#F5C518">✓</span> Licensed by the Bureau of Household Goods & Services
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;font-family:'Barlow Condensed',sans-serif;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(240,237,232,0.45);border:1px solid rgba(245,197,24,0.12);padding:7px 14px;">
+          <span style="color:#F5C518">✓</span> Fully Insured
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;font-family:'Barlow Condensed',sans-serif;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(240,237,232,0.45);border:1px solid rgba(245,197,24,0.12);padding:7px 14px;">
+          <span style="color:#F5C518">🔒</span> Secure Payment via Stripe
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;font-family:'Barlow Condensed',sans-serif;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(240,237,232,0.45);border:1px solid rgba(245,197,24,0.12);padding:7px 14px;">
+          <span style="color:#F5C518">✓</span> Honest Quote Before Any Work Begins
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom CTA -->
+  <div class="bottom-cta">
+    <div class="bottom-cta-inner">
+      <img src="/logo.png" alt="Gold Country Appliance Repair" />
+      <h2>Need It Fixed Today?</h2>
+      <p>Same-day service available · Nevada & Placer County</p>
+      <div class="bottom-cta-btns">
+        <a href="tel:+15302773536" class="btn-dark">📞 Call (530) 277-3536</a>
+        <a href="#booking" class="btn-outline-dark">📅 Book Above</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <img src="/logo.png" alt="Gold Country Appliance Repair" />
+    <p>© 2025 Gold Country Appliance Repair · Paul Capone · Licensed & Insured</p>
+    <p>Serving Nevada County · Placer County · Sacramento County</p>
+    <p style="margin-top:10px;"><a href="/">← Back to Home</a></p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Appliance Repair for Gated & Senior Communities | Gold Country Appliance Repair</title>
+  <meta name="description" content="Gold Country Appliance Repair serves gated communities and assisted living facilities across Nevada County and Placer County. Licensed mobile technician — we come to you. Call (530) 277-3536." />
+  <link rel="canonical" href="https://gcappliancerepair.com/communities/" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Gold Country Appliance Repair",
+    "telephone": "+15302773536",
+    "url": "https://gcappliancerepair.com",
+    "description": "Mobile appliance repair serving gated communities and assisted living facilities in Nevada County and Placer County, CA.",
+    "areaServed": [
+      "Lake Wildwood, CA", "Lake of the Pines, CA", "The Cedars, CA", "Alta Sierra, CA",
+      "Sun City Lincoln Hills, CA", "Sun City Roseville, CA", "Springfield at Whitney Oaks, CA",
+      "Morgan Creek, CA", "Whitney Oaks, CA", "Crowne Point, CA"
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --gold: #F5C518;
+      --gold-light: #FFD740;
+      --gold-dark: #C9A000;
+      --black: #0A0A0A;
+      --black-mid: #111111;
+      --black-card: #161616;
+      --white: #F0EDE8;
+      --gray: #888;
+      --font-display: 'Bebas Neue', sans-serif;
+      --font-condensed: 'Barlow Condensed', sans-serif;
+      --font-body: 'Barlow', sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    /* DUAL MOBILE ACTION BAR */
+    .action-bar {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      z-index: 999;
+      display: none;
+      grid-template-columns: 1fr 1fr;
+    }
+    .action-bar-call {
+      background: var(--gold);
+      padding: 14px 10px; text-align: center;
+    }
+    .action-bar-call a {
+      font-family: var(--font-display);
+      font-size: 1.15rem; letter-spacing: 0.04em; color: var(--black);
+      display: flex; align-items: center; justify-content: center; gap: 6px;
+    }
+    .action-bar-book {
+      background: var(--black-mid);
+      border-top: 2px solid var(--gold);
+      padding: 14px 10px; text-align: center;
+    }
+    .action-bar-book a {
+      font-family: var(--font-display);
+      font-size: 1.15rem; letter-spacing: 0.04em; color: var(--gold);
+      display: flex; align-items: center; justify-content: center; gap: 6px;
+    }
+    @media (max-width: 768px) {
+      .action-bar { display: grid; }
+      body { padding-bottom: 56px; }
+    }
+
+    /* NAV */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(10,10,10,0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(245,197,24,0.15);
+      padding: 0 5%;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 68px;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 12px; }
+    .nav-logo img { height: 54px; filter: brightness(0) invert(1); }
+    .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+    .nav-links a {
+      font-family: var(--font-condensed);
+      font-size: 0.95rem; letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--white); opacity: 0.8; transition: opacity 0.2s, color 0.2s;
+    }
+    .nav-links a:hover { opacity: 1; color: var(--gold); }
+    .nav-cta {
+      background: var(--gold); color: var(--black) !important;
+      opacity: 1 !important; padding: 8px 18px; font-weight: 700 !important;
+    }
+    .nav-book {
+      border: 1px solid var(--gold); color: var(--gold) !important;
+      opacity: 1 !important; padding: 7px 16px;
+      transition: background 0.2s !important;
+    }
+    .nav-book:hover { background: rgba(245,197,24,0.1) !important; }
+    .nav-mobile-call { display: none; }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-mobile-call {
+        display: flex; align-items: center; gap: 8px;
+        font-family: var(--font-display); font-size: 1.1rem;
+        color: var(--gold); letter-spacing: 0.05em;
+      }
+    }
+
+    /* PAGE HERO */
+    .page-hero {
+      position: relative;
+      padding: 80px 5% 60px;
+      border-bottom: 1px solid rgba(245,197,24,0.1);
+      background: radial-gradient(ellipse 70% 60% at 80% 50%, rgba(245,197,24,0.06) 0%, transparent 70%);
+    }
+    .breadcrumb {
+      font-family: var(--font-condensed);
+      font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase;
+      color: rgba(240,237,232,0.35);
+      margin-bottom: 20px;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .breadcrumb a { color: var(--gold); opacity: 0.7; transition: opacity 0.2s; }
+    .breadcrumb a:hover { opacity: 1; }
+    .breadcrumb-sep { opacity: 0.3; }
+    .page-hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      letter-spacing: 0.02em; line-height: 0.95;
+      margin-bottom: 16px;
+    }
+    .page-hero h1 span { color: var(--gold); }
+    .page-hero p {
+      font-size: 1.05rem;
+      color: rgba(240,237,232,0.65);
+      max-width: 620px; line-height: 1.7;
+      margin-bottom: 28px;
+    }
+    .hero-cta {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--gold); color: var(--black);
+      font-family: var(--font-display); font-size: 1.2rem;
+      letter-spacing: 0.08em; padding: 14px 32px;
+      transition: background 0.2s;
+    }
+    .hero-cta:hover { background: var(--gold-light); }
+
+    /* COUNTY NAV */
+    .county-nav {
+      background: var(--black-mid);
+      border-bottom: 1px solid rgba(245,197,24,0.1);
+      padding: 0 5%;
+      display: flex; gap: 0; overflow-x: auto;
+    }
+    .county-nav a {
+      font-family: var(--font-condensed);
+      font-size: 0.85rem; letter-spacing: 0.12em; text-transform: uppercase;
+      color: rgba(240,237,232,0.5);
+      padding: 16px 24px;
+      border-bottom: 2px solid transparent;
+      white-space: nowrap;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .county-nav a:hover, .county-nav a.active {
+      color: var(--gold); border-bottom-color: var(--gold);
+    }
+
+    /* MAIN LAYOUT */
+    .main-wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 72px 5%;
+    }
+
+    /* COUNTY SECTION */
+    .county-section { margin-bottom: 80px; }
+    .county-header {
+      display: flex; align-items: center; gap: 16px;
+      margin-bottom: 40px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid rgba(245,197,24,0.15);
+    }
+    .county-icon {
+      width: 48px; height: 48px;
+      border: 1px solid rgba(245,197,24,0.3);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem; flex-shrink: 0;
+    }
+    .county-header-text {}
+    .county-label {
+      font-family: var(--font-condensed);
+      font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--gold); opacity: 0.7; margin-bottom: 2px;
+    }
+    .county-title {
+      font-family: var(--font-display);
+      font-size: 2rem; letter-spacing: 0.04em;
+      color: var(--white);
+    }
+
+    /* CITY GROUP */
+    .city-group { margin-bottom: 44px; }
+    .city-group-header {
+      display: flex; align-items: center; gap: 10px;
+      margin-bottom: 16px;
+    }
+    .city-group-name {
+      font-family: var(--font-condensed);
+      font-size: 1.1rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--gold);
+    }
+    .city-group-line {
+      flex: 1; height: 1px;
+      background: rgba(245,197,24,0.12);
+    }
+    .city-group-count {
+      font-family: var(--font-condensed);
+      font-size: 0.75rem; letter-spacing: 0.1em;
+      color: rgba(240,237,232,0.3);
+    }
+
+    /* COMMUNITY CARDS */
+    .community-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 12px;
+    }
+
+    .community-card {
+      background: var(--black-card);
+      border: 1px solid rgba(245,197,24,0.08);
+      padding: 20px 20px 16px;
+      position: relative;
+      transition: border-color 0.2s, background 0.2s;
+      display: flex; flex-direction: column; gap: 8px;
+    }
+    .community-card:hover {
+      border-color: rgba(245,197,24,0.3);
+      background: #1a1a1a;
+    }
+    .community-card a {
+      position: absolute; inset: 0;
+    }
+
+    .community-type-tag {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-family: var(--font-condensed);
+      font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 0;
+      width: fit-content;
+    }
+    .tag-gated {
+      background: rgba(245,197,24,0.08);
+      color: var(--gold-dark);
+      border: 1px solid rgba(201,160,0,0.25);
+    }
+    .tag-assisted {
+      background: rgba(100,180,255,0.06);
+      color: #7BB8E8;
+      border: 1px solid rgba(100,180,255,0.2);
+    }
+    .tag-55plus {
+      background: rgba(180,120,255,0.06);
+      color: #B47EE8;
+      border: 1px solid rgba(180,120,255,0.2);
+    }
+
+    .community-name {
+      font-family: var(--font-condensed);
+      font-size: 1rem; font-weight: 700;
+      letter-spacing: 0.04em;
+      color: var(--white);
+      line-height: 1.3;
+    }
+
+    .community-desc {
+      font-size: 0.8rem;
+      color: rgba(240,237,232,0.4);
+      line-height: 1.5;
+    }
+
+    .community-arrow {
+      font-size: 0.8rem;
+      color: var(--gold);
+      opacity: 0;
+      transition: opacity 0.2s;
+      margin-top: auto;
+      font-family: var(--font-condensed);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .community-card:hover .community-arrow { opacity: 1; }
+
+    /* LEGEND */
+    .legend {
+      display: flex; gap: 20px; flex-wrap: wrap;
+      margin-bottom: 48px;
+      padding: 16px 20px;
+      background: var(--black-card);
+      border: 1px solid rgba(245,197,24,0.08);
+    }
+    .legend-item {
+      display: flex; align-items: center; gap: 8px;
+      font-family: var(--font-condensed);
+      font-size: 0.8rem; letter-spacing: 0.08em;
+      color: rgba(240,237,232,0.5);
+    }
+
+    /* CTA STRIP */
+    .cta-strip {
+      background: var(--gold);
+      padding: 48px 5%;
+      text-align: center;
+    }
+    .cta-strip h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      color: var(--black); margin-bottom: 8px;
+    }
+    .cta-strip p {
+      font-family: var(--font-condensed);
+      font-size: 0.95rem; letter-spacing: 0.1em; text-transform: uppercase;
+      color: rgba(10,10,10,0.55); margin-bottom: 24px;
+    }
+    .btn-dark {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--black); color: var(--gold);
+      font-family: var(--font-display); font-size: 1.2rem;
+      letter-spacing: 0.08em; padding: 14px 36px;
+      transition: background 0.2s;
+    }
+    .btn-dark:hover { background: #1a1a1a; }
+
+    /* FOOTER */
+    footer {
+      background: var(--black);
+      border-top: 1px solid rgba(245,197,24,0.1);
+      padding: 40px 5% 28px;
+      text-align: center;
+    }
+    footer img { height: 38px; filter: brightness(0) invert(1); margin-bottom: 12px; }
+    footer p {
+      font-size: 0.8rem; color: rgba(240,237,232,0.25);
+      font-family: var(--font-condensed); letter-spacing: 0.05em;
+      margin-bottom: 4px;
+    }
+    footer a { color: var(--gold); opacity: 0.6; }
+    footer a:hover { opacity: 1; }
+  </style>
+</head>
+<body>
+
+  <!-- Dual mobile action bar -->
+  <div class="action-bar">
+    <div class="action-bar-call">
+      <a href="tel:+15302773536">📞 Call Now</a>
+    </div>
+    <div class="action-bar-book">
+      <a href="/booking/">📅 Book Online</a>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-logo">
+      <a href="/"><img src="/logo.png" alt="Gold Country Appliance Repair" /></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="/#services">Services</a></li>
+      <li><a href="/#areas">Service Areas</a></li>
+      <li><a href="/communities/">Communities</a></li>
+      <li><a href="/#about">About</a></li>
+      <li><a href="/booking/" class="nav-book">📅 Book Online</a></li>
+      <li><a href="tel:+15302773536" class="nav-cta">📞 (530) 277-3536</a></li>
+    </ul>
+    <a href="tel:+15302773536" class="nav-mobile-call">📞 Call Now</a>
+  </nav>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="breadcrumb">
+      <a href="/">Home</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>Communities</span>
+    </div>
+    <img src="/logo.png" alt="Gold Country Appliance Repair" style="height:72px;width:auto;filter:brightness(0) invert(1);margin-bottom:24px;display:block;" />
+    <h1>Gated & Senior<br /><span>Community Service</span></h1>
+    <p>Gold Country Appliance Repair provides mobile appliance repair to gated communities, assisted living facilities, and 55+ communities across Nevada County and Placer County. We're familiar with gate procedures, community access, and the needs of senior residents — and we come to you.</p>
+    <a href="tel:+15302773536" class="hero-cta">📞 Call (530) 277-3536</a>
+  </div>
+
+  <!-- Hero photo strip -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px;">
+    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=75&fit=crop" alt="Sierra Nevada foothills community near Grass Valley Nevada County California — Gold Country Appliance Repair serves gated and senior communities" width="700" height="200" loading="lazy" style="width:100%;height:200px;object-fit:cover;filter:grayscale(20%) brightness(.65);display:block;"/>
+    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=75&fit=crop" alt="Mobile appliance repair technician serving gated communities and assisted living facilities in Placer County California" width="700" height="200" loading="lazy" style="width:100%;height:200px;object-fit:cover;filter:grayscale(20%) brightness(.65);display:block;"/>
+  </div>
+
+  <!-- County Tab Nav -->
+  <div class="county-nav">
+    <a href="#nevada-county" class="active">Nevada County</a>
+    <a href="#placer-county">Placer County</a>
+  </div>
+
+  <!-- Main -->
+  <div class="main-wrap">
+
+    <!-- Legend -->
+    <div class="legend">
+      <div class="legend-item">
+        <span class="community-type-tag tag-gated">🔒 Gated</span>
+        Private gated residential community
+      </div>
+      <div class="legend-item">
+        <span class="community-type-tag tag-assisted">🏥 Assisted Living</span>
+        Assisted living / memory care / skilled nursing
+      </div>
+      <div class="legend-item">
+        <span class="community-type-tag tag-55plus">55+ Active Adult</span>
+        Active adult / independent senior living
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- NEVADA COUNTY                                   -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section class="county-section" id="nevada-county">
+      <div class="county-header">
+        <div class="county-icon">🏔️</div>
+        <div class="county-header-text">
+          <div class="county-label">County</div>
+          <div class="county-title">Nevada County</div>
+        </div>
+      </div>
+
+      <!-- Grass Valley -->
+      <div class="city-group">
+        <div class="city-group-header">
+          <div class="city-group-name">Grass Valley</div>
+          <div class="city-group-line"></div>
+          <div class="city-group-count">8 Communities</div>
+        </div>
+        <div class="community-grid">
+
+          <div class="community-card">
+            <a href="/nevada-county/grass-valley/the-cedars/"></a>
+            <span class="community-type-tag tag-gated">🔒 Gated</span>
+            <div class="community-name">The Cedars</div>
+            <div class="community-desc">Luxury gated community within Cedar Ridge. High-end custom homes, private entrance.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/nevada-county/grass-valley/alta-sierra/"></a>
+            <span class="community-type-tag tag-gated">🔒 Gated</span>
+            <div class="community-name">Alta Sierra</div>
+            <div class="community-desc">Golf course community centered around Alta Sierra Country Club. Residential enclave near Grass Valley.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/nevada-county/grass-valley/cedar-ridge/"></a>
+            <span class="community-type-tag tag-gated">🔒 Gated</span>
+            <div class="community-name">Cedar Ridge</div>
+            <div class="community-desc">Established subdivision community on the south side of Grass Valley with gated sections.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/nevada-county/grass-valley/forest-springs/"></a>
+            <span class="community-type-tag tag-55plus">55+ Active Adult</span>
+            <div class="community-name">Forest Springs</div>
+            <div class="community-desc">55+ active adult community nestled in the Sierra Foothills with homes built into pine-covered hills.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/nevada-county/grass-valley/atria-grass-valley/"></a>
+            <span class="community-type-tag tag-assisted">🏥 Assisted Living</span>
+            <div class="community-name">Atria Grass Valley</div>
+            <div class="community-desc">Independent and assisted living community by Atria Senior Living. Memory care available.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/nevada-county/grass-valley/cascades-of-grass-valley/"></a>
+            <span class="community-type-tag tag-55plus">55+ Active Adult</span>
+            <div class="community-name">Cascades of Grass Valley</div>
+            <div class="community-desc">Senior independent living offering private suites and studios in a full-service campus setting.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/nevada-county/grass-valley/brunswick-village/"></a>
+            <span class="community-type-tag tag-55plus">55+ Active Adult</span>
+            <div class="community-name">Brunswick Village</div>
+            <div class="community-desc">Independent living community in Grass Valley offering a serene retirement lifestyle in the foothills.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/nevada-county/grass-valley/sierra-pointe/"></a>
+            <span class="community-type-tag tag-55plus">55+ Active Adult</span>
+            <div class="community-name">Sierra Pointe Senior Living</div>
+            <div class="community-desc">Senior community offering independent and assisted living accommodations in the Grass Valley area.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Penn Valley -->
+      <div class="city-group">
+        <div class="city-group-header">
+          <div class="city-group-name">Penn Valley</div>
+          <div class="city-group-line"></div>
+          <div class="city-group-count">1 Community</div>
+        </div>
+        <div class="community-grid">
+
+          <div class="community-card">
+            <a href="/nevada-county/penn-valley/lake-wildwood/"></a>
+            <span class="community-type-tag tag-gated">🔒 Gated</span>
+            <div class="community-name">Lake Wildwood</div>
+            <div class="community-desc">Private gated community with 24-hour security, 300-acre recreational lake, championship golf, tennis, and parks. Located off Hwy 20.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Nevada City -->
+      <div class="city-group">
+        <div class="city-group-header">
+          <div class="city-group-name">Nevada City</div>
+          <div class="city-group-line"></div>
+          <div class="city-group-count">2 Communities</div>
+        </div>
+        <div class="community-grid">
+
+          <div class="community-card">
+            <a href="/nevada-county/nevada-city/nevada-city-manor/"></a>
+            <span class="community-type-tag tag-assisted">🏥 Assisted Living</span>
+            <div class="community-name">Nevada City Manor</div>
+            <div class="community-desc">Assisted living and senior care facility serving Nevada City residents in a residential setting.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/nevada-county/nevada-city/the-pines-at-nevada-city/"></a>
+            <span class="community-type-tag tag-55plus">55+ Active Adult</span>
+            <div class="community-name">The Pines at Nevada City</div>
+            <div class="community-desc">Senior living community nestled in the historic Nevada City area offering independent lifestyle options.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- end Nevada County -->
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- PLACER COUNTY                                   -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section class="county-section" id="placer-county">
+      <div class="county-header">
+        <div class="county-icon">🌄</div>
+        <div class="county-header-text">
+          <div class="county-label">County</div>
+          <div class="county-title">Placer County</div>
+        </div>
+      </div>
+
+      <!-- Auburn -->
+      <div class="city-group">
+        <div class="city-group-header">
+          <div class="city-group-name">Auburn</div>
+          <div class="city-group-line"></div>
+          <div class="city-group-count">7 Communities</div>
+        </div>
+        <div class="community-grid">
+
+          <div class="community-card">
+            <a href="/placer-county/auburn/lake-of-the-pines/"></a>
+            <span class="community-type-tag tag-gated">🔒 Gated</span>
+            <div class="community-name">Lake of the Pines</div>
+            <div class="community-desc">Premier gated community of ~2,000 homes along 5 miles of shoreline. 18-hole golf course, tennis, 8 parks. Located between Auburn and Grass Valley off Hwy 49.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/placer-county/auburn/winchester-country-club/"></a>
+            <span class="community-type-tag tag-gated">🔒 Gated</span>
+            <div class="community-name">Winchester Country Club</div>
+            <div class="community-desc">Exclusive semi-private golf and residential community in the Sierra Foothills, 5 minutes from Auburn shopping.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/placer-county/auburn/the-oaks-of-auburn/"></a>
+            <span class="community-type-tag tag-55plus">55+ Active Adult</span>
+            <div class="community-name">The Oaks of Auburn</div>
+            <div class="community-desc">Peaceful senior living community near Auburn's historic downtown. Independent and assisted living available.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/placer-county/auburn/solstice-senior-living-auburn/"></a>
+            <span class="community-type-tag tag-55plus">55+ Active Adult</span>
+            <div class="community-name">Solstice Senior Living – Auburn</div>
+            <div class="community-desc">Independent senior living community nestled in the Sierra Nevada foothills of Auburn.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/placer-county/auburn/ansel-park-auburn/"></a>
+            <span class="community-type-tag tag-assisted">🏥 Assisted Living</span>
+            <div class="community-name">Ansel Park Senior Living</div>
+            <div class="community-desc">Retirement living concept offering independent living, assisted living, and memory care in Auburn.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/placer-county/auburn/valley-oaks-senior/"></a>
+            <span class="community-type-tag tag-55plus">55+ Active Adult</span>
+            <div class="community-name">Valley Oaks Senior Apartments</div>
+            <div class="community-desc">Multi-story senior apartment complex in Auburn offering independent living overlooking scenic surroundings.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/placer-county/auburn/sunrise-of-auburn/"></a>
+            <span class="community-type-tag tag-assisted">🏥 Assisted Living</span>
+            <div class="community-name">Sunrise Senior Living – Auburn</div>
+            <div class="community-desc">Holistic senior care with assisted living, memory care, and individualized care plans for Auburn residents.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Roseville -->
+      <div class="city-group">
+        <div class="city-group-header">
+          <div class="city-group-name">Roseville</div>
+          <div class="city-group-line"></div>
+          <div class="city-group-count">12 Communities</div>
+        </div>
+        <div class="community-grid">
+
+          <div class="community-card">
+            <a href="/placer-county/roseville/sun-city-roseville/"></a>
+            <span class="community-type-tag tag-55plus">55+ Active Adult</span>
+            <div class="community-name">Sun City Roseville</div>
+            <div class="community-desc">Del Webb's 1,200-acre active adult community with 3,110 single-story ranch-style homes. Pools, spa, tennis, and full resort amenities.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/placer-county/roseville/morgan-creek/"></a>
+            <span class="community-type-tag tag-gated">🔒 Gated</span>
+            <div class="community-name">Morgan Creek</div>
+            <div class="community-desc">Gated golf community with Craftsman and Mediterranean-style homes adjacent to Morgan Creek Golf Club.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/placer-county/roseville/heritage-solaire/"></a>
+            <span class="community-type-tag tag-55plus">55+ Active Adult</span>
+            <div class="community-name">Heritage Solaire</div>
+            <div class="community-desc">Upscale 55+ active adult community by Lennar. Three neighborhoods of new homes with home automation and resort amenities.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/placer-county/roseville/eskaton-village-roseville/"></a>
+            <span class="community-type-tag tag-55plus">55+ Active Adult</span>
+            <div class="community-name">Eskaton Village Roseville</div>
+            <div class="community-desc">Multiservice retirement community offering home ownership, independent living, and luxury residences in Blue Oaks.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/placer-county/roseville/oakmont-of-roseville/"></a>
+            <span class="community-type-tag tag-assisted">🏥 Assisted Living</span>
+            <div class="community-name">Oakmont of Roseville</div>
+            <div class="community-desc">Resort-style independent living and assisted living community in the Stoneridge area of Roseville.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/placer-county/roseville/terraces-of-roseville/"></a>
+            <span class="community-type-tag tag-assisted">🏥 Assisted Living</span>
+            <div class="community-name">The Terraces of Roseville</div>
+            <div class="community-desc">Independent living, assisted living, and memory care campus offering an expansive lifestyle in Roseville.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/placer-county/roseville/sterling-court-roseville/"></a>
+            <span class="community-type-tag tag-assisted">🏥 Assisted Living</span>
+            <div class="community-name">Sterling Court at Roseville</div>
+            <div class="community-desc">Assisted living and memory care community delivering exceptional senior care in Roseville.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/placer-county/roseville/truewood-roseville/"></a>
+            <span class="community-type-tag tag-55plus">55+ Active Adult</span>
+            <div class="community-name">Truewood by Merrill – Roseville</div>
+            <div class="community-desc">Garden campus independent senior living community in Roseville with full dining and activities programs.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/placer-county/roseville/oakmont-westpark/"></a>
+            <span class="community-type-tag tag-assisted">🏥 Assisted Living</span>
+            <div class="community-name">Oakmont of Westpark</div>
+            <div class="community-desc">Luxury resort-style assisted living with nurses on staff in the Westpark area of Roseville.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/placer-county/roseville/ivy-at-blue-oaks/"></a>
+            <span class="community-type-tag tag-assisted">🏥 Assisted Living</span>
+            <div class="community-name">The Ivy at Blue Oaks</div>
+            <div class="community-desc">Luxury assisted living and memory care community in the Blue Oaks neighborhood of Roseville.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/placer-county/roseville/roseville-commons/"></a>
+            <span class="community-type-tag tag-55plus">55+ Active Adult</span>
+            <div class="community-name">Roseville Commons</div>
+            <div class="community-desc">Active senior retirement community in central Roseville offering a hassle-free independent lifestyle.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/placer-county/roseville/pleasant-grove/"></a>
+            <span class="community-type-tag tag-gated">🔒 Gated</span>
+            <div class="community-name">Pleasant Grove (Gated Sections)</div>
+            <div class="community-desc">Roseville neighborhood featuring gated communities near Woodcreek Golf Club and Pleasant Grove Creek Trail.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Rocklin -->
+      <div class="city-group">
+        <div class="city-group-header">
+          <div class="city-group-name">Rocklin</div>
+          <div class="city-group-line"></div>
+          <div class="city-group-count">9 Communities</div>
+        </div>
+        <div class="community-grid">
+
+          <div class="community-card">
+            <a href="/placer-county/rocklin/springfield-at-whitney-oaks/"></a>
+            <span class="community-type-tag tag-55plus">55+ Active Adult</span>
+            <div class="community-name">Springfield at Whitney Oaks</div>
+            <div class="community-desc">Placer County's premier gated 55+ retirement community by Pulte Homes. Full gym, pools, spa, tennis, and miles of trails.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/placer-county/rocklin/whitney-oaks/"></a>
+            <span class="community-type-tag tag-gated">🔒 Gated</span>
+            <div class="community-name">Whitney Oaks</div>
+            <div class="community-desc">Master-planned golf community in Rocklin featuring gated sections, the Whitney Oaks Golf Club, and tree-lined promenades.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/placer-county/rocklin/the-park-at-rocklin/"></a>
+            <span class="community-type-tag tag-gated">🔒 Gated</span>
+            <div class="community-name">The Park at Rocklin</div>
+            <div class="community-desc">Desirable gated single-story community in Rocklin. Quiet residential enclave with excellent access to I-80.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/placer-county/rocklin/crowne-point/"></a>
+            <span class="community-type-tag tag-gated">🔒 Gated</span>
+            <div class="community-name">Crowne Point</div>
+            <div class="community-desc">One of Rocklin's best gated communities. Tim Lewis Communities development known for security and high-quality construction.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/placer-county/rocklin/stanford-ranch/"></a>
+            <span class="community-type-tag tag-gated">🔒 Gated</span>
+            <div class="community-name">Stanford Ranch</div>
+            <div class="community-desc">One of Rocklin's most desirable addresses. Established community with gated sections, parks, and proximity to top-rated schools.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/placer-county/rocklin/atria-rocklin/"></a>
+            <span class="community-type-tag tag-assisted">🏥 Assisted Living</span>
+            <div class="community-name">Atria Rocklin</div>
+            <div class="community-desc">Country-like residential assisted living in Rocklin. Nurses on staff, memory care, accommodates couples with different care needs.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/placer-county/rocklin/sunrise-of-rocklin/"></a>
+            <span class="community-type-tag tag-assisted">🏥 Assisted Living</span>
+            <div class="community-name">Sunrise of Rocklin</div>
+            <div class="community-desc">Holistic senior care community in the Stoneridge area of Rocklin offering assisted living and memory care.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/placer-county/rocklin/rolling-oaks/"></a>
+            <span class="community-type-tag tag-55plus">55+ Active Adult</span>
+            <div class="community-name">Rolling Oaks</div>
+            <div class="community-desc">Safe and secure 62+ senior living community in the rolling foothills of Rocklin. All one-bedroom units.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/placer-county/rocklin/ansel-park-rocklin/"></a>
+            <span class="community-type-tag tag-assisted">🏥 Assisted Living</span>
+            <div class="community-name">Ansel Park Senior Living – Rocklin</div>
+            <div class="community-desc">Health, wellness, and adventure-focused retirement living with independent living, assisted living, and memory care in Rocklin.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Lincoln -->
+      <div class="city-group">
+        <div class="city-group-header">
+          <div class="city-group-name">Lincoln</div>
+          <div class="city-group-line"></div>
+          <div class="city-group-count">3 Communities</div>
+        </div>
+        <div class="community-grid">
+
+          <div class="community-card">
+            <a href="/placer-county/lincoln/sun-city-lincoln-hills/"></a>
+            <span class="community-type-tag tag-55plus">55+ Active Adult</span>
+            <div class="community-name">Sun City Lincoln Hills</div>
+            <div class="community-desc">The largest active adult community in California. Del Webb development built around two 18-hole championship golf courses, 2,992 acres, 40+ floor plans, miles of trails.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/placer-county/lincoln/bickford-ranch/"></a>
+            <span class="community-type-tag tag-gated">🔒 Gated</span>
+            <div class="community-name">Bickford Ranch</div>
+            <div class="community-desc">Master-planned gated community in Lincoln with Loomis schools, future sports park, restaurant access, and miles of trails.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/placer-county/lincoln/havenwood-lincoln/"></a>
+            <span class="community-type-tag tag-gated">🔒 Gated</span>
+            <div class="community-name">Havenwood</div>
+            <div class="community-desc">Newer Cresleigh Homes community in Lincoln. Gated neighborhood with modern floor plans and community amenities.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Loomis -->
+      <div class="city-group">
+        <div class="city-group-header">
+          <div class="city-group-name">Loomis</div>
+          <div class="city-group-line"></div>
+          <div class="city-group-count">2 Communities</div>
+        </div>
+        <div class="community-grid">
+
+          <div class="community-card">
+            <a href="/placer-county/loomis/glenbrook-trails/"></a>
+            <span class="community-type-tag tag-55plus">55+ Active Adult</span>
+            <div class="community-name">Glenbrook Trails</div>
+            <div class="community-desc">55+ active lifestyle community in Loomis. Green oasis featuring low-maintenance manufactured homes with a strong community feel.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+          <div class="community-card">
+            <a href="/placer-county/loomis/bickford-ranch-loomis/"></a>
+            <span class="community-type-tag tag-gated">🔒 Gated</span>
+            <div class="community-name">Loomis Gated Estates</div>
+            <div class="community-desc">Private gated residential properties in the Loomis area, including horse properties and large-lot estates with gate access.</div>
+            <div class="community-arrow">View Service Page →</div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- end Placer County -->
+
+  </div><!-- end main-wrap -->
+
+  <!-- CTA Strip -->
+  <div class="cta-strip">
+    <img src="/logo.png" alt="Gold Country Appliance Repair" style="height:64px;width:auto;filter:brightness(0);opacity:0.15;margin-bottom:20px;display:block;margin-left:auto;margin-right:auto;" />
+    <h2>We Know Your Community.</h2>
+    <p>Gate access · Senior-friendly service · Licensed & Insured</p>
+    <a href="tel:+15302773536" class="btn-dark">📞 Call (530) 277-3536</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <img src="/logo.png" alt="Gold Country Appliance Repair" style="height:56px;" />
+    <p>© 2025 Gold Country Appliance Repair · Paul Capone · Licensed & Insured</p>
+    <p>Serving Nevada County · Placer County · Sacramento County</p>
+    <p style="margin-top:10px;"><a href="/">← Back to Home</a></p>
+  </footer>
+
+  <script>
+    // Highlight active county tab on scroll
+    const sections = document.querySelectorAll('.county-section');
+    const navLinks = document.querySelectorAll('.county-nav a');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 120) current = s.id;
+      });
+      navLinks.forEach(a => {
+        a.classList.remove('active');
+        if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
