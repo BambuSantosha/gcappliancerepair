@@ -1,5 +1,22 @@
 /* ─── GOLD COUNTRY APPLIANCE REPAIR — GLOBAL CENTERED LAYOUT ─── */
 
+/* ── LOGO — show as-is, no color filter ── */
+.nav-logo img,
+.nl img,
+img.lg,
+img.logo,
+.hero-logo img,
+footer img {
+  filter: none !important;
+}
+/* CTA watermark logo — subtle opacity only */
+.ci img,
+.cta-inner img,
+.bottom-cta-inner img {
+  filter: none !important;
+  opacity: 0.25 !important;
+}
+
 /* ── NAV ── */
 nav {
   justify-content: center !important;
