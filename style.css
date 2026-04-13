@@ -182,3 +182,34 @@ footer {
     align-items: center;
   }
 }
+
+/* ── LOGO SIZING ── */
+.nav-logo img,
+.nl img {
+  height: 120px !important;
+  width: auto !important;
+}
+img.lg,
+img.logo,
+.hero-logo img {
+  height: 200px !important;
+  width: auto !important;
+}
+footer img {
+  height: 100px !important;
+  width: auto !important;
+}
+@media (max-width: 768px) {
+  .nav-logo img,
+  .nl img {
+    height: 80px !important;
+  }
+  img.lg,
+  img.logo,
+  .hero-logo img {
+    height: 140px !important;
+  }
+  footer img {
+    height: 80px !important;
+  }
+}
