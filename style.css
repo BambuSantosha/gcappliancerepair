@@ -1,0 +1,167 @@
+/* ─── GOLD COUNTRY APPLIANCE REPAIR — GLOBAL CENTERED LAYOUT ─── */
+
+/* ── NAV ── */
+nav {
+  justify-content: center !important;
+  gap: 0 !important;
+  flex-direction: column !important;
+  height: auto !important;
+  padding: 18px 5% !important;
+  text-align: center;
+}
+.nav-logo,
+.nl {
+  justify-content: center !important;
+  margin-bottom: 14px;
+}
+.nav-links,
+.links {
+  justify-content: center !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+}
+.nav-mobile-call {
+  justify-content: center !important;
+}
+
+/* ── HERO ── */
+.hero {
+  align-items: center !important;
+  text-align: center;
+}
+.hero-content {
+  max-width: 800px !important;
+  margin: 0 auto !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-logo {
+  display: flex;
+  justify-content: center;
+}
+.hero-eyebrow {
+  justify-content: center !important;
+  text-align: center;
+}
+.hero-eyebrow::before {
+  display: none !important;
+}
+.hero-actions {
+  justify-content: center !important;
+}
+.hero-badges {
+  justify-content: center !important;
+}
+.hero-desc {
+  text-align: center;
+}
+
+/* ── PAGE HERO (inner pages) ── */
+.ph {
+  text-align: center;
+}
+.ph-in {
+  margin: 0 auto !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ph-in img.lg,
+.ph-in img.logo {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.hb {
+  justify-content: center !important;
+}
+.bc {
+  justify-content: center !important;
+}
+.hero-btns {
+  justify-content: center !important;
+}
+
+/* ── SECTION LABELS ── */
+.section-label,
+.sl {
+  justify-content: center !important;
+  text-align: center;
+}
+.section-label::before,
+.sl::before {
+  display: none !important;
+}
+.section-title,
+.st {
+  text-align: center;
+}
+.section-body {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center;
+}
+
+/* ── PAGE HERO text ── */
+.ey,
+.hero-eyebrow,
+.hero-sub {
+  text-align: center;
+}
+.ph-in h1,
+.ph-in p,
+.ph-in .tl {
+  text-align: center;
+}
+
+/* ── ABOUT SECTION ── */
+.about-content {
+  text-align: left; /* keep about copy left-aligned for readability */
+}
+
+/* ── TRUST BADGES ── */
+.trust-row {
+  justify-content: center !important;
+}
+
+/* ── FOOTER ── */
+footer {
+  text-align: center !important;
+}
+
+/* ── CTA BANNERS ── */
+.cta-banner,
+.cb,
+.bottom-cta,
+.cta-strip {
+  text-align: center !important;
+}
+.cta-btns,
+.cib,
+.bottom-cta-btns {
+  justify-content: center !important;
+}
+
+/* ── COUNTY NAV (communities page) ── */
+.county-nav {
+  justify-content: center !important;
+}
+
+/* ── SIDEBAR (booking page) ── */
+.booking-sidebar {
+  text-align: left; /* keep sidebar left for readability */
+}
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  nav {
+    padding: 14px 5% !important;
+  }
+  .nav-links,
+  .links {
+    gap: 8px !important;
+  }
+  .hero-content {
+    align-items: center;
+  }
+}
