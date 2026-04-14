@@ -186,36 +186,36 @@ footer {
 /* ── LOGO SIZING ── */
 .nav-logo img,
 .nl img {
-  height: 600px !important;
+  height: 135px !important;
   width: auto !important;
   max-width: 90vw !important;
 }
 img.lg,
 img.logo,
 .hero-logo img {
-  height: 1000px !important;
+  height: 500px !important;
   width: auto !important;
   max-width: 90vw !important;
 }
 footer img {
-  height: 500px !important;
+  height: 130px !important;
   width: auto !important;
   max-width: 90vw !important;
 }
 @media (max-width: 768px) {
   .nav-logo img,
   .nl img {
-    height: 400px !important;
+    height: 90px !important;
     max-width: 85vw !important;
   }
   img.lg,
   img.logo,
   .hero-logo img {
-    height: 700px !important;
+    height: 300px !important;
     max-width: 85vw !important;
   }
   footer img {
-    height: 350px !important;
+    height: 100px !important;
     max-width: 85vw !important;
   }
 }
