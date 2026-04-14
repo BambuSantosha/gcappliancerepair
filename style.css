@@ -184,38 +184,58 @@ footer {
 }
 
 /* ── LOGO SIZING ── */
+/* Nav — slim horizontal logo, compact bar */
 .nav-logo img,
 .nl img {
-  height: 135px !important;
+  height: 44px !important;
   width: auto !important;
-  max-width: 90vw !important;
+  max-width: 260px !important;
 }
+/* Hero — large and prominent */
 img.lg,
 img.logo,
 .hero-logo img {
-  height: 500px !important;
-  width: auto !important;
-  max-width: 90vw !important;
+  height: auto !important;
+  width: 480px !important;
+  max-width: 88vw !important;
 }
+/* Footer */
 footer img {
-  height: 130px !important;
-  width: auto !important;
-  max-width: 90vw !important;
+  height: auto !important;
+  width: 320px !important;
+  max-width: 85vw !important;
 }
-@media (max-width: 768px) {
+/* Nav back to single row on desktop */
+nav {
+  flex-direction: row !important;
+  height: 68px !important;
+  padding: 0 5% !important;
+  text-align: left !important;
+}
+.nav-logo,
+.nl {
+  margin-bottom: 0 !important;
+}
+.nav-links,
+.links {
+  flex-wrap: nowrap !important;
+  gap: 20px !important;
+}
+@media (max-width: 900px) {
   .nav-logo img,
   .nl img {
-    height: 90px !important;
-    max-width: 85vw !important;
+    height: 36px !important;
+    max-width: 200px !important;
   }
   img.lg,
   img.logo,
   .hero-logo img {
-    height: 300px !important;
-    max-width: 85vw !important;
+    width: 85vw !important;
   }
   footer img {
-    height: 100px !important;
-    max-width: 85vw !important;
+    width: 75vw !important;
+  }
+  nav {
+    height: 60px !important;
   }
 }
