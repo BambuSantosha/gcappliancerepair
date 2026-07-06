@@ -1,0 +1,27 @@
+# Gold Country Appliance Repair — URL Redirects
+# Old Horizons/Hostinger URLs redirected to correct new pages
+
+/ro-water-filters                          /                    301
+/ro-water-filters/                         /                    301
+/appliance-repair-grass-valley-ca          /nevada-county/grass-valley/    301
+/appliance-repair-grass-valley-ca/         /nevada-county/grass-valley/    301
+/contact                                   /booking/            301
+/contact/                                  /booking/            301
+/about                                     /#about              301
+/about/                                    /#about              301
+/services                                  /#services           301
+/services/                                 /#services           301
+/appliance-repair                          /                    301
+/appliance-repair/                         /                    301
+/refrigerator-repair                       /nevada-county/grass-valley/refrigerator-repair/    301
+/refrigerator-repair/                      /nevada-county/grass-valley/refrigerator-repair/    301
+/dryer-repair                              /nevada-county/grass-valley/dryer-repair/           301
+/dryer-repair/                             /nevada-county/grass-valley/dryer-repair/           301
+/washer-repair                             /nevada-county/grass-valley/washer-repair/          301
+/washer-repair/                            /nevada-county/grass-valley/washer-repair/          301
+/dishwasher-repair                         /nevada-county/grass-valley/dishwasher-repair/      301
+/dishwasher-repair/                        /nevada-county/grass-valley/dishwasher-repair/      301
+/oven-repair                               /nevada-county/grass-valley/oven-range-repair/      301
+/oven-repair/                              /nevada-county/grass-valley/oven-range-repair/      301
+/freezer-repair                            /nevada-county/grass-valley/freezer-repair/         301
+/freezer-repair/                           /nevada-county/grass-valley/freezer-repair/         301
